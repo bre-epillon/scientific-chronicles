@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode | default `en` }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Date Archive | {{ site.Title }}</title>
+  <link rel="stylesheet" href="{{ `css/site.css` | relURL }}">
+</head>
+<body>
+  <div class="shell">
+    <div class="container">
+      <header class="nav">
+        <a class="brand" href="/">
+          <span class="brand-mark">SC</span>
+          <span>{{ site.Title }}</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/categories/">Categories</a>
+          <a href="/tags/">Tags</a>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="page-hero page-hero-single">
+          <div class="page-hero-copy">
+            <span class="eyebrow">Date archive</span>
+            <h1>Open any day in the scientific chronicle.</h1>
+            <p>
+              Pick a month and day to jump directly to the personalities connected with that date
+              through a birth or death event.
+            </p>
+          </div>
+
+          <aside class="hero-card">
+            <div class="card-top">
+              <div class="card-title">Jump to a day</div>
+              <span class="chip">MM-DD</span>
+            </div>
+
+            <div class="preview">
+              <label class="date-label" for="date-select">Select a date</label>
+              <div class="date-row">
+                <select id="date-select" name="date">
+                  <option value="">Choose MM-DD</option>
+                </select>
+                <button class="btn btn-primary" id="go-button" type="button">Open page</button>
+              </div>
+              <p class="hint">
+                Every daily page lives at <code>/date/MM-DD.html</code> for a clean and predictable archive structure.
+              </p>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const select = document.getElementById('date-select');
+      const button = document.getElementById('go-button');
+      const monthLengths = [
+        { month: '01', days: 31 },
+        { month: '02', days: 29 },
+        { month: '03', days: 31 },
+        { month: '04', days: 30 },
+        { month: '05', days: 31 },
+        { month: '06', days: 30 },
+        { month: '07', days: 31 },
+        { month: '08', days: 31 },
+        { month: '09', days: 30 },
+        { month: '10', days: 31 },
+        { month: '11', days: 30 },
+        { month: '12', days: 31 }
+      ];
+
+      for (const { month, days } of monthLengths) {
+        for (let day = 1; day <= days; day += 1) {
+          const paddedDay = String(day).padStart(2, '0');
+          const value = month + '-' + paddedDay;
+          const option = document.createElement('option');
+          option.value = value;
+          option.textContent = value;
+          select.appendChild(option);
+        }
+      }
+
+      const redirectToDate = function () {
+        if (!select.value) {
+          return;
+        }
+
+        window.location.href = '/date/' + select.value + '.html';
+      };
+
+      select.addEventListener('change', redirectToDate);
+      button.addEventListener('click', redirectToDate);
+    }());
+  </script>
+</body>
+</html>

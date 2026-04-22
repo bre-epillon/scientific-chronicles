@@ -8,26 +8,31 @@
       {{ .Title }}
     </a>
   </h4>
+  {{ $author := .Params.author }}
   {{ $categories:= .Params.categories }}
-  {{ if $categories }}
+  {{ if or $author $categories }}
     <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-          <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        {{ range $i,$p:= $categories }}
-          <a
-            href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-            class="ms-1"
-            >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-              {{ "," }}
-            {{ end }}
+      {{ if $author }}
+        <li class="mr-4 inline-block">
+          <a href="{{ `authors/` | relLangURL }}{{ $author | urlize }}/">
+            <i class="fa-regular fa-circle-user mr-2"></i>{{ $author }}
           </a>
-        {{ end }}
-      </li>
+        </li>
+      {{ end }}
+      {{ if $categories }}
+        <li class="mr-4 inline-block">
+          <i class="fa-regular fa-folder mr-1"></i>
+          {{ range $i,$p:= $categories }}
+            <a
+              href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+              class="ms-1"
+              >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                {{ "," }}
+              {{ end }}
+            </a>
+          {{ end }}
+        </li>
+      {{ end }}
     </ul>
   {{ end }}
   <p class="mb-6">{{ .Summary | plainify }}</p>

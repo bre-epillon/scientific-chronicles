@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode | default `en` }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ site.Title }}</title>
+</head>
+<body>
+  <main>
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}
+
+    <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ else }}
+        <li>No entries yet.</li>
+      {{ end }}
+    </ul>
+  </main>
+</body>
+</html>

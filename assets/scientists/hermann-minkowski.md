@@ -4,7 +4,7 @@ surname: "Minkowski"
 gender: "male"
 nationality: "German"
 birth_date: "1864-06-22"
-death_date: "1909"
+death_date: "1909-01-12"
 disciplines:
   - "Mathematics"
   - "Physics"

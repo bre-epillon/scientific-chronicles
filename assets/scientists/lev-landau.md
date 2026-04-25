@@ -4,7 +4,7 @@ surname: "Landau"
 gender: "male"
 nationality: "Soviet"
 birth_date: "1908-01-22"
-death_date: "1968-MM-DD"
+death_date: "1968-04-01"
 disciplines:
   - "low-temperature physics"
   - "atomic physics"

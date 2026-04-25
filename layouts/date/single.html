@@ -28,6 +28,7 @@
         "gender" (index $meta "gender")
         "birth_date" (index $meta "birth_date")
         "death_date" (index $meta "death_date")
+        "image" (index $meta "image")
         "events" $events
         "content" ($body | markdownify)
       ) }}
@@ -113,29 +114,41 @@
             <div class="person-list">
               {{ range $sorted }}
                 <article class="person-card">
-                  <div class="person-header">
-                    <div>
-                      <h3>{{ .name }}</h3>
-                      {{ with .headline }}
-                        <p class="person-headline">{{ . }}</p>
+                  <div class="person-card-inner">
+                    {{ with .image }}
+                      {{ $img := resources.Get (printf "images/%s" .) }}
+                      {{ if $img }}
+                        <div class="person-avatar">
+                          <img src="{{ $img.RelPermalink }}" alt="Portrait of {{ $.name }}" loading="lazy">
+                        </div>
                       {{ end }}
-                    </div>
-                    <div class="event-pills">
-                      {{ range .events }}
-                        <span class="meta-pill">{{ . }}</span>
-                      {{ end }}
-                    </div>
-                  </div>
+                    {{ end }}
+                    <div class="person-info">
+                      <div class="person-header">
+                        <div>
+                          <h3>{{ .name }}</h3>
+                          {{ with .headline }}
+                            <p class="person-headline">{{ . }}</p>
+                          {{ end }}
+                        </div>
+                        <div class="event-pills">
+                          {{ range .events }}
+                            <span class="meta-pill">{{ . }}</span>
+                          {{ end }}
+                        </div>
+                      </div>
 
-                  <div class="person-meta">
-                    {{ with .nationality }}<span>{{ . }}</span>{{ end }}
-                    {{ with .gender }}<span>{{ . }}</span>{{ end }}
-                    {{ with .birth_date }}<span>Born {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
-                    {{ with .death_date }}<span>Died {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
-                  </div>
+                      <div class="person-meta">
+                        {{ with .nationality }}<span>{{ . }}</span>{{ end }}
+                        {{ with .gender }}<span>{{ . }}</span>{{ end }}
+                        {{ with .birth_date }}<span>Born {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
+                        {{ with .death_date }}<span>Died {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
+                      </div>
 
-                  <div class="person-content">
-                    {{ .content }}
+                      <div class="person-content">
+                        {{ .content }}
+                      </div>
+                    </div>
                   </div>
                 </article>
               {{ end }}

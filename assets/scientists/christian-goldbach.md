@@ -4,7 +4,7 @@ surname: "Goldbach"
 gender: "male"
 nationality: "Russian"
 birth_date: "1690-03-18"
-death_date: "1764-XX-XX"
+death_date: "1764-11-20"
 disciplines:
   - "Mathematics"
   - "Number Theory"

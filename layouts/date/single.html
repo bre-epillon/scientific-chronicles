@@ -10,7 +10,7 @@
       {{ $birthKey = dateFormat "01-02" . }}
     {{ end }}
     {{ $deathKey := "" }}
-    {{ with index $meta "death" }}
+    {{ with index $meta "death_date" }}
       {{ $deathKey = dateFormat "01-02" . }}
     {{ end }}
     {{ if or (eq $birthKey $pageDate) (eq $deathKey $pageDate) }}

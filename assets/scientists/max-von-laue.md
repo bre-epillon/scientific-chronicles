@@ -4,7 +4,7 @@ surname: "von Laue"
 gender: "male"
 nationality: "German"
 birth_date: "1879-10-09"
-death_date: "1960-XX-XX"
+death_date: "1960-04-24"
 disciplines:
   - "Physics"
   - "Solid-state physics"

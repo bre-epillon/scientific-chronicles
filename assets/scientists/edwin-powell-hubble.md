@@ -4,7 +4,7 @@ surname: "Hubble"
 gender: "male"
 nationality: "American"
 birth_date: "1889-11-20"
-death_date: "1953-XX-XX"
+death_date: "1953-09-28"
 disciplines:
   - "Astronomy"
   - "Extragalactic Astronomy"

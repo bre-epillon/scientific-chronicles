@@ -4,7 +4,7 @@ surname: "Oppenheimer"
 gender: "male"
 nationality: "American"
 birth_date: "1904-04-22"
-death_date: "1967-XX-XX"
+death_date: "1967-02-18"
 disciplines:
   - "Theoretical Physics"
   - "Nuclear Physics"

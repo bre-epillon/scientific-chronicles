@@ -4,7 +4,7 @@ surname: "Poincaré"
 gender: "male"
 nationality: "French"
 birth_date: "1854-04-29"
-death_date: "1912-XX-XX"
+death_date: "1912-07-17"
 disciplines:
   - "mathematics"
   - "physics"

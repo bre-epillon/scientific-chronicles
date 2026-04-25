@@ -21,17 +21,7 @@
       {{ if eq $deathKey $pageDate }}
         {{ $events = $events | append "Death" }}
       {{ end }}
-      {{ $matches = $matches | append (dict
-        "name" (printf "%s %s" (index $meta "name") (index $meta "surname"))
-        "headline" (index $meta "headline")
-        "nationality" (index $meta "nationality")
-        "gender" (index $meta "gender")
-        "birth_date" (index $meta "birth_date")
-        "death_date" (index $meta "death_date")
-        "image" (index $meta "image")
-        "events" $events
-        "content" ($body | markdownify)
-      ) }}
+      {{ $matches = $matches | append (dict "name" (printf "%s %s" (index $meta "name") (index $meta "surname")) "headline" (index $meta "headline") "nationality" (index $meta "nationality") "gender" (index $meta "gender") "birth_date" (index $meta "birth_date") "death_date" (index $meta "death_date") "image" (index $meta "image") "events" $events "content" ($body | markdownify)) }}
     {{ end }}
   {{ end }}
 {{ end }}

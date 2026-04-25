@@ -3,7 +3,7 @@ name: "Leonardo"
 surname: "da Vinci"
 gender: "male"
 nationality: "Italian"
-birth_date: "unknown"
+birth_date: "1452-04-15"
 death_date: "1519-05-02"
 disciplines:
   - "anatomist"

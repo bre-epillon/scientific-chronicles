@@ -4,7 +4,7 @@ surname: "Wien"
 gender: "Male"
 nationality: "German"
 birth_date: "1864-01-13"
-death_date: "unknown"
+death_date: "1928-08-30"
 disciplines:
   - "Physics"
   - "Mass Spectroscopy"

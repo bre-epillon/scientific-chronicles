@@ -3,7 +3,7 @@ name: "David"
 surname: "Hilbert"
 gender: "male"
 nationality: "German"
-birth_date: "unknown"
+birth_date: "1862-01-23"
 death_date: "1943-02-14"
 disciplines:
   - "mathematics"

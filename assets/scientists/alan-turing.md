@@ -4,7 +4,7 @@ surname: "Turing"
 gender: "Male"
 nationality: "English"
 birth_date: "1912-06-23"
-death_date: "unknown"
+death_date: "1954-06-07"
 disciplines:
   - "Mathematics"
   - "Computer Science"

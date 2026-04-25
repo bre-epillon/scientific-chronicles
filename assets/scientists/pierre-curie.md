@@ -4,7 +4,7 @@ surname: "Curie"
 gender: "Male"
 nationality: "French"
 birth_date: "1859-05-15"
-death_date: "unknown"
+death_date: "1906-04-19"
 disciplines:
   - "Physics"
   - "Chemistry"

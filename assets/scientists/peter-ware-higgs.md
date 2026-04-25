@@ -4,7 +4,7 @@ surname: "Higgs"
 gender: "Male"
 nationality: "English"
 birth_date: "1929-05-29"
-death_date: "unknown"
+death_date: "2024-04-08"
 disciplines:
   - "Physics"
   - "Theoretical Physics"

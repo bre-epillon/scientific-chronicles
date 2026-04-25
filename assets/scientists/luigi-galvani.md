@@ -3,7 +3,7 @@ name: "Luigi"
 surname: "Galvani"
 gender: "male"
 nationality: "Italian"
-birth_date: "unknown"
+birth_date: "1737-09-09"
 death_date: "1798-12-04"
 disciplines:
   - "physician"

@@ -4,7 +4,7 @@ surname: "Pauling"
 gender: "male"
 nationality: "American"
 birth_date: "1901-02-28"
-death_date: "unknown"
+death_date: "1994-08-19"
 disciplines:
   - "chemistry"
   - "physics"

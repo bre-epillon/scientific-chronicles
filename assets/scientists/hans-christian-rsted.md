@@ -4,7 +4,7 @@ surname: "rsted"
 gender: "male"
 nationality: "Danish"
 birth_date: "1777-08-14"
-death_date: "unknown"
+death_date: "1851-03-09"
 disciplines:
   - "Physics"
   - "Chemistry"

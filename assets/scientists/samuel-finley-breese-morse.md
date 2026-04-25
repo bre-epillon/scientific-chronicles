@@ -4,7 +4,7 @@ surname: "Morse"
 gender: "male"
 nationality: "American"
 birth_date: "1791-04-27"
-death_date: "unknown"
+death_date: "1872-04-02"
 disciplines:
   - "Art"
   - "Invention"

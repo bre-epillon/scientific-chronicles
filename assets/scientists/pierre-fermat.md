@@ -3,7 +3,7 @@ name: "Pierre"
 surname: "Fermat"
 gender: "male"
 nationality: "French"
-birth_date: "unknown"
+birth_date: "1601-08-17"
 death_date: "1665-01-12"
 disciplines:
   - "Mathematics"

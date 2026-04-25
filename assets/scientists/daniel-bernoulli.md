@@ -3,7 +3,7 @@ name: "Daniel"
 surname: "Bernoulli"
 gender: "male"
 nationality: "Swiss"
-birth_date: "unknown"
+birth_date: "1700-02-08"
 death_date: "1782-03-17"
 disciplines:
   - "Mathematics"

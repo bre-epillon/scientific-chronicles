@@ -4,7 +4,7 @@ surname: "Galilei"
 gender: "Male"
 nationality: "Italian"
 birth_date: "1564-02-15"
-death_date: "unknown"
+death_date: "1642-01-08"
 disciplines:
   - "Astronomy"
   - "Physics"

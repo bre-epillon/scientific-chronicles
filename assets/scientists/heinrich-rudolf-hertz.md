@@ -4,7 +4,7 @@ surname: "Hertz"
 gender: "male"
 nationality: "German"
 birth_date: "1857-02-22"
-death_date: "unknown"
+death_date: "1894-01-01"
 disciplines:
   - "Physics"
   - "Electromagnetism"

@@ -3,7 +3,7 @@ name: "Karl Theodor Wilhelm"
 surname: "Weierstrass"
 gender: "male"
 nationality: "German"
-birth_date: "unknown"
+birth_date: "1815-10-31"
 death_date: "1897-02-19"
 disciplines:
   - "Mathematics"

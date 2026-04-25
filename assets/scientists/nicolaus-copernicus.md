@@ -4,7 +4,7 @@ surname: "Copernicus"
 gender: "Male"
 nationality: "Polish"
 birth_date: "1473-02-19"
-death_date: "unknown"
+death_date: "1543-05-24"
 disciplines:
   - "Astronomy"
   - "Mathematics"

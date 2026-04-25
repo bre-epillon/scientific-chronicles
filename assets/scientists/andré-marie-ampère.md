@@ -3,7 +3,7 @@ name: "André-Marie"
 surname: "Ampère"
 gender: "male"
 nationality: "French"
-birth_date: "unknown"
+birth_date: "1775-01-20"
 death_date: "1836-06-10"
 disciplines:
   - "Mathematics"

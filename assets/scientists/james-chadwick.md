@@ -3,7 +3,7 @@ name: "James"
 surname: "Chadwick"
 gender: "male"
 nationality: "British"
-birth_date: "unknown"
+birth_date: "1891-10-20"
 death_date: "1974-07-24"
 disciplines:
   - "Physics"

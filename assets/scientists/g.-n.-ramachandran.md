@@ -4,7 +4,7 @@ surname: "Ramachandran"
 gender: "male"
 nationality: "Indian"
 birth_date: "1922-10-08"
-death_date: "unknown"
+death_date: "2001-04-07"
 disciplines:
   - "biophysics"
   - "structural biology"

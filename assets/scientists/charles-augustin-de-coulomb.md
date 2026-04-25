@@ -4,7 +4,7 @@ surname: "de Coulomb"
 gender: "male"
 nationality: "French"
 birth_date: "1736-06-14"
-death_date: "unknown"
+death_date: "1806-08-23"
 disciplines:
   - "Physics"
   - "Engineering"

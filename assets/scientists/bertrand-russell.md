@@ -3,7 +3,7 @@ name: "Bertrand"
 surname: "Russell"
 gender: "Male"
 nationality: "Welsh"
-birth_date: "unknown"
+birth_date: "1872-05-18"
 death_date: "1970-02-02"
 disciplines:
   - "mathematics"

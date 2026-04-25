@@ -4,7 +4,7 @@ surname: "Heisenberg"
 gender: "male"
 nationality: "German"
 birth_date: "1901-12-05"
-death_date: "unknown"
+death_date: "1976-02-01"
 disciplines:
   - "Theoretical Physics"
   - "Quantum Mechanics"

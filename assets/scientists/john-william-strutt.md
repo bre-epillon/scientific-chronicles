@@ -4,7 +4,7 @@ surname: "Strutt"
 gender: "male"
 nationality: "British"
 birth_date: "1842-11-12"
-death_date: "unknown"
+death_date: "1919-06-30"
 disciplines:
   - "Theoretical physics"
   - "Experimental physics"

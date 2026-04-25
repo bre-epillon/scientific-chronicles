@@ -4,7 +4,7 @@ surname: "Pascal"
 gender: "male"
 nationality: "French"
 birth_date: "1623-06-19"
-death_date: "unknown"
+death_date: "1662-08-19"
 disciplines:
   - "mathematics"
   - "physics"

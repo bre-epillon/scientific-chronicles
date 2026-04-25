@@ -4,7 +4,7 @@ surname: "Teller"
 gender: "male"
 nationality: "Hungarian-American"
 birth_date: "1908-01-15"
-death_date: "unknown"
+death_date: "2003-09-09"
 disciplines:
   - "Nuclear Physics"
   - "Physics"

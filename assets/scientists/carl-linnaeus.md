@@ -3,7 +3,7 @@ name: "Carl"
 surname: "Linnaeus"
 gender: "Male"
 nationality: "Swedish"
-birth_date: "unknown"
+birth_date: "1707-05-23"
 death_date: "1778-01-10"
 disciplines:
   - "Botanist"

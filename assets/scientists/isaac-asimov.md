@@ -4,7 +4,7 @@ surname: "Asimov"
 gender: "male"
 nationality: "American"
 birth_date: "1920-01-02"
-death_date: "unknown"
+death_date: "1992-04-06"
 disciplines:
   - "Biochemistry"
   - "Science Fiction"

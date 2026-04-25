@@ -3,7 +3,7 @@ name: "Dmitri"
 surname: "Mendeleev"
 gender: "Male"
 nationality: "Russian"
-birth_date: "unknown"
+birth_date: "1834-02-08"
 death_date: "1907-02-02"
 disciplines:
   - "Chemistry"

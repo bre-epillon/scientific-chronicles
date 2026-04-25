@@ -4,7 +4,7 @@ surname: "Darwin"
 gender: "male"
 nationality: "British"
 birth_date: "1809-02-12"
-death_date: "unknown"
+death_date: "1882-04-19"
 disciplines:
   - "naturalist"
   - "geologist"

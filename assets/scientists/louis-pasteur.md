@@ -4,7 +4,7 @@ surname: "Pasteur"
 gender: "Male"
 nationality: "French"
 birth_date: "1822-12-27"
-death_date: "unknown"
+death_date: "1895-09-28"
 disciplines:
   - "biology"
   - "microbiology"

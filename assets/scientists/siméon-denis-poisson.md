@@ -4,7 +4,7 @@ surname: "Poisson"
 gender: "male"
 nationality: "French"
 birth_date: "1781-06-21"
-death_date: "unknown"
+death_date: "1840-04-25"
 disciplines:
   - "Mathematics"
   - "Physics"

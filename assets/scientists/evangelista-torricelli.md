@@ -4,7 +4,7 @@ surname: "Torricelli"
 gender: "male"
 nationality: "Italian"
 birth_date: "1608-10-15"
-death_date: "unknown"
+death_date: "1647-10-25"
 disciplines:
   - "Physics"
   - "Mathematics"

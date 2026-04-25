@@ -3,7 +3,7 @@ name: "Max"
 surname: "Born"
 gender: "Male"
 nationality: "German-British"
-birth_date: "unknown"
+birth_date: "1882-12-11"
 death_date: "1970-01-05"
 disciplines:
   - "Physics"

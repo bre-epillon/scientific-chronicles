@@ -3,7 +3,7 @@ name: "Hendrik"
 surname: "Lorentz"
 gender: "male"
 nationality: "Dutch"
-birth_date: "1853-unknown"
+birth_date: "1853-07-18"
 death_date: "1928-02-04"
 disciplines:
   - "Physics"

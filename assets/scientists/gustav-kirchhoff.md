@@ -3,7 +3,7 @@ name: "Gustav"
 surname: "Kirchhoff"
 gender: "male"
 nationality: "German"
-birth_date: "unknown"
+birth_date: "1824-03-12"
 death_date: "1887-10-17"
 disciplines:
   - "Physics"

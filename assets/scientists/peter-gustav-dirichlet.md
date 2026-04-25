@@ -4,7 +4,7 @@ surname: "Dirichlet"
 gender: "male"
 nationality: "German"
 birth_date: "1805-02-13"
-death_date: "unknown"
+death_date: "1859-05-05"
 disciplines:
   - "Number Theory"
   - "Analysis"

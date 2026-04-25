@@ -4,7 +4,7 @@ surname: "Volta"
 gender: "male"
 nationality: "Italian"
 birth_date: "1745-02-18"
-death_date: "unknown"
+death_date: "1827-03-05"
 disciplines:
   - "physics"
   - "chemistry"

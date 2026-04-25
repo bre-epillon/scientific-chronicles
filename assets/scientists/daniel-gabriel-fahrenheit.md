@@ -3,7 +3,7 @@ name: "Daniel Gabriel"
 surname: "Fahrenheit"
 gender: "male"
 nationality: "Dutch"
-birth_date: "unknown"
+birth_date: "1686-05-24"
 death_date: "1736-09-16"
 disciplines:
   - "physicist"

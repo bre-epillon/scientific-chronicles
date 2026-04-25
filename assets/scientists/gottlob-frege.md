@@ -4,7 +4,7 @@ surname: "Frege"
 gender: "male"
 nationality: "German"
 birth_date: "1848-11-08"
-death_date: "unknown"
+death_date: "1925-07-26"
 disciplines:
   - "mathematics"
   - "logic"

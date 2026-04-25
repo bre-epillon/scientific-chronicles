@@ -3,7 +3,7 @@ name: "Georg Friedrich Bernhard"
 surname: "Riemann"
 gender: "Male"
 nationality: "German"
-birth_date: "unknown"
+birth_date: "1826-09-17"
 death_date: "1866-07-20"
 disciplines:
   - "Mathematics"

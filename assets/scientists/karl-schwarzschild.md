@@ -4,7 +4,7 @@ surname: "Schwarzschild"
 gender: "male"
 nationality: "German"
 birth_date: "1873-10-09"
-death_date: "unknown"
+death_date: "1916-05-11"
 disciplines:
   - "astrophysics"
   - "physics"

@@ -4,7 +4,7 @@ surname: "de Sitter"
 gender: "male"
 nationality: "Dutch"
 birth_date: "1872-05-06"
-death_date: "unknown"
+death_date: "1934-11-20"
 disciplines:
   - "mathematician"
   - "astronomer"

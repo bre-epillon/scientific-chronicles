@@ -4,7 +4,7 @@ surname: "Ramanujan"
 gender: "male"
 nationality: "Indian"
 birth_date: "1887-12-22"
-death_date: "unknown"
+death_date: "1920-04-26"
 disciplines:
   - "Mathematics"
   - "Mathematical analysis"

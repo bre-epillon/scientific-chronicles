@@ -4,7 +4,7 @@ surname: "Bohr"
 gender: "male"
 nationality: "Danish"
 birth_date: "1885-10-07"
-death_date: "unknown"
+death_date: "1962-11-18"
 disciplines:
   - "Physics"
   - "Atomic structure"

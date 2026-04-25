@@ -4,7 +4,7 @@ surname: "Weyl"
 gender: "male"
 nationality: "German-American"
 birth_date: "1885-11-09"
-death_date: "unknown"
+death_date: "1955-12-08"
 disciplines:
   - "Mathematics"
   - "Theoretical Physics"

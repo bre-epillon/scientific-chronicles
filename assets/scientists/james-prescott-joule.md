@@ -4,7 +4,7 @@ surname: "Joule"
 gender: "male"
 nationality: "English"
 birth_date: "1818-12-24"
-death_date: "unknown"
+death_date: "1889-10-11"
 disciplines:
   - "physics"
   - "mathematics"

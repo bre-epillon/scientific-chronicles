@@ -4,7 +4,7 @@ surname: "Berners Lee"
 gender: "Male"
 nationality: "English"
 birth_date: "1955-06-08"
-death_date: "unknown"
+death_date: ""
 disciplines:
   - "Computer Science"
   - "Physics"

@@ -4,7 +4,7 @@ surname: "van der Waals"
 gender: "male"
 nationality: "Dutch"
 birth_date: "1837-11-23"
-death_date: "unknown"
+death_date: "1923-03-08"
 disciplines:
   - "Physics"
   - "Mathematics"

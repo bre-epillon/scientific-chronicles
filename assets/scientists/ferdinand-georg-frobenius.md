@@ -3,7 +3,7 @@ name: "Ferdinand Georg"
 surname: "Frobenius"
 gender: "male"
 nationality: "German"
-birth_date: "unknown"
+birth_date: "1849-10-26"
 death_date: "1917-08-03"
 disciplines:
   - "Mathematics"

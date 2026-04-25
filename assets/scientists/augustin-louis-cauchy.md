@@ -4,7 +4,7 @@ surname: "Cauchy"
 gender: "Male"
 nationality: "French"
 birth_date: "1789-08-21"
-death_date: "unknown"
+death_date: "1857-05-23"
 disciplines:
   - "Mathematics"
   - "Engineering"

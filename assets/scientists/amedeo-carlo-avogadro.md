@@ -4,7 +4,7 @@ surname: "Avogadro"
 gender: "male"
 nationality: "Italian"
 birth_date: "1776-08-09"
-death_date: "unknown"
+death_date: "1856-07-09"
 disciplines:
   - "Physics"
   - "Chemistry"

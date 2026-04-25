@@ -3,7 +3,7 @@ name: "August Ferdinand"
 surname: "Möbius"
 gender: "male"
 nationality: "German"
-birth_date: "unknown"
+birth_date: "1790-11-17"
 death_date: "1868-09-26"
 disciplines:
   - "Mathematics"

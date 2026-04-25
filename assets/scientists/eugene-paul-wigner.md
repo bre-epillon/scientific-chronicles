@@ -4,7 +4,7 @@ surname: "Wigner"
 gender: "male"
 nationality: "Hungarian-American"
 birth_date: "1902-11-17"
-death_date: "unknown"
+death_date: "1995-01-01"
 disciplines:
   - "Physics"
   - "Mathematics"

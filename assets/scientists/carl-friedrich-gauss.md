@@ -4,7 +4,7 @@ surname: "Gauss"
 gender: "male"
 nationality: "German"
 birth_date: "1777-04-30"
-death_date: "unknown"
+death_date: "1855-02-23"
 disciplines:
   - "Mathematics"
   - "Electromagnetism"

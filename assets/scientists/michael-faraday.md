@@ -4,7 +4,7 @@ surname: "Faraday"
 gender: "male"
 nationality: "English"
 birth_date: "1791-09-22"
-death_date: "unknown"
+death_date: "1867-08-25"
 disciplines:
   - "Electromagnetism"
   - "Electrochemistry"

@@ -4,7 +4,7 @@ surname: "D'Alembert"
 gender: "male"
 nationality: "French"
 birth_date: "1717-11-16"
-death_date: "unknown"
+death_date: "1783-10-29"
 disciplines:
   - "Mathematics"
   - "Physics"

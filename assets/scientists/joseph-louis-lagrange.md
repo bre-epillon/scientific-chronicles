@@ -4,7 +4,7 @@ surname: "Lagrange"
 gender: "male"
 nationality: "French"
 birth_date: "1736-01-25"
-death_date: "unknown"
+death_date: "1813-04-10"
 disciplines:
   - "mathematician"
   - "astronomer"

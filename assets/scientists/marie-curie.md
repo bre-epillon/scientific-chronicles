@@ -3,7 +3,7 @@ name: "Marie"
 surname: "Curie"
 gender: "female"
 nationality: "Polish-French"
-birth_date: "1867-unknown"
+birth_date: "1867-11-07"
 death_date: "1934-07-04"
 disciplines:
   - "Chemistry"

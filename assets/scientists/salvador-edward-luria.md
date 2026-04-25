@@ -4,7 +4,7 @@ surname: "Luria"
 gender: "Male"
 nationality: "Italian, American"
 birth_date: "1912-08-13"
-death_date: "unknown"
+death_date: "1991-02-06"
 disciplines:
   - "Microbiology"
   - "Biology"

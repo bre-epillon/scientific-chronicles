@@ -3,7 +3,7 @@ name: "Jean-Baptiste-Joseph"
 surname: "Fourier"
 gender: "Male"
 nationality: "French"
-birth_date: "unknown"
+birth_date: "1768-03-21"
 death_date: "1830-05-16"
 disciplines:
   - "Mathematician"

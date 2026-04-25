@@ -4,7 +4,7 @@ surname: "Leibniz"
 gender: "male"
 nationality: "German"
 birth_date: "1646-07-01"
-death_date: "unknown"
+death_date: "1716-11-14"
 disciplines:
   - "philosopher"
   - "mathematician"

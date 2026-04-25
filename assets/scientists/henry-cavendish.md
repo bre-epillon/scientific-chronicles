@@ -4,7 +4,7 @@ surname: "Cavendish"
 gender: "male"
 nationality: "English"
 birth_date: "1731-10-10"
-death_date: "unknown"
+death_date: "1810-02-24"
 disciplines:
   - "Natural Philosophy"
   - "Chemistry"

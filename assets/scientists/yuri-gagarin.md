@@ -3,7 +3,7 @@ name: "Yuri"
 surname: "Gagarin"
 gender: "male"
 nationality: "Soviet"
-birth_date: "unknown"
+birth_date: "1934-03-09"
 death_date: "1968-03-27"
 disciplines:
   - "pilot"

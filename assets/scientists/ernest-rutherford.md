@@ -4,7 +4,7 @@ surname: "Rutherford"
 gender: "male"
 nationality: "New Zealand"
 birth_date: "1871-08-30"
-death_date: "unknown"
+death_date: "1937-10-19"
 disciplines:
   - "Physics"
   - "Nuclear Physics"

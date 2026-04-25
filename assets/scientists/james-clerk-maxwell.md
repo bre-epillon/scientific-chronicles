@@ -4,7 +4,7 @@ surname: "Maxwell"
 gender: "Male"
 nationality: "Scottish"
 birth_date: "1831-06-13"
-death_date: "unknown"
+death_date: "1879-11-05"
 disciplines:
   - "Physicist"
   - "Mathematician"

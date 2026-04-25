@@ -3,7 +3,7 @@ name: "William"
 surname: "Thomson"
 gender: "male"
 nationality: "Irish"
-birth_date: "unknown"
+birth_date: "1824-06-26"
 death_date: "1907-12-17"
 disciplines:
   - "physics"

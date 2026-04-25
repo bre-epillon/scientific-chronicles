@@ -4,7 +4,7 @@ surname: "Schrödinger"
 gender: "male"
 nationality: "Austrian"
 birth_date: "1887-08-12"
-death_date: "unknown"
+death_date: "1961-01-04"
 disciplines:
   - "Physics"
   - "Quantum Mechanics"

@@ -4,7 +4,7 @@ surname: "Boltzmann"
 gender: "male"
 nationality: "Austrian"
 birth_date: "1844-02-20"
-death_date: "unknown"
+death_date: "1906-09-05"
 disciplines:
   - "Physics"
   - "Philosophy"

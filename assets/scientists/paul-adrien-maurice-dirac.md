@@ -4,7 +4,7 @@ surname: "Dirac"
 gender: "male"
 nationality: "English"
 birth_date: "1902-08-08"
-death_date: "unknown"
+death_date: "1984-10-20"
 disciplines:
   - "Physics"
   - "Mathematics"

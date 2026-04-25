@@ -3,7 +3,7 @@ name: "Alexander Graham"
 surname: "Bell"
 gender: "male"
 nationality: "Scottish, American"
-birth_date: "unknown"
+birth_date: "1847-03-03"
 death_date: "1922-08-02"
 disciplines:
   - "Invention"

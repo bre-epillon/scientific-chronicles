@@ -115,11 +115,11 @@
               {{ range $sorted }}
                 <article class="person-card">
                   <div class="person-card-inner">
-                    {{ with .image }}
-                      {{ $img := resources.Get (printf "images/%s" .) }}
+                    {{ if .image }}
+                      {{ $img := resources.Get (printf "images/%s" .image) }}
                       {{ if $img }}
                         <div class="person-avatar">
-                          <img src="{{ $img.RelPermalink }}" alt="Portrait of {{ $.name }}" loading="lazy">
+                          <img src="{{ $img.RelPermalink }}" alt="Portrait of {{ .name }}" loading="lazy">
                         </div>
                       {{ end }}
                     {{ end }}

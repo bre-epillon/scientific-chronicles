@@ -15,3 +15,5 @@ headline: "Pioneering Serbian-American inventor and electrical engineer whose th
 quote: ""
 image: "nikola-tesla.png"
 ---
+
+Nikola Tesla? More like Nikola *Awesome*la! This Serbian-American inventor was a true visionary. He didn't just dabble in electricity; he practically *invented* our modern world! His genius work and patents on Alternating Current (AC) electrical systems basically flipped the switch on the Second Industrial Revolution. Think about it: lights, power, everything running on electricity? A massive chunk of that is thanks to his brilliant, often misunderstood, mind. What a spark! ⚡💡

@@ -23,3 +23,5 @@ headline: "Leonardo da Vinci was an Italian polymath renowned for his masterpiec
 quote: ""
 image: "leonardo-da-vinci.png"
 ---
+
+Leo da Vinci wasn't just an art genius (hello, Mona Lisa! 👋). This guy was a total polymath! He was sketching helicopters, tanks, and diving suits centuries before they were actually invented! A true visionary who saw the future in science and engineering while also creating some of the world's most famous masterpieces. Seriously, what *couldn't* he do? 🎨⚙️✈️

@@ -14,3 +14,5 @@ headline: "Indian biophysicist known for discovering the triple helical 'coiled 
 quote: ""
 image: "g.-n.-ramachandran.jpg"
 ---
+
+Meet G. N. Ramachandran, an absolute legend in biophysics from India! 🇮🇳 He didn't just casually discover the super cool triple helical 'coiled coil' structure of collagen – you know, that stuff keeping your skin springy and bones strong? Nope, he went even further and created the Ramachandran Plot. This plot helps us understand the structure of proteins, which is a HUGE deal for understanding life itself! What a brain! 🧬🔬

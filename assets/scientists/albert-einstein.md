@@ -12,3 +12,5 @@ headline: "German-born theoretical physicist renowned for developing the theory 
 quote: ""
 image: "albert-einstein.png"
 ---
+
+Albert Einstein – the hair, the genius, the guy who made 'relativity' a household word! 🤯 He completely reshaped how we think about space, time, gravity, and energy. Remember E=mc²? That's his jam, explaining how mass and energy are basically two sides of the same coin. And he didn't just stop there; he won a Nobel Prize for explaining the photoelectric effect, which helps us understand things like solar panels. Basically, he was operating on a whole other level! What a legend. ✨

@@ -19,3 +19,5 @@ headline: "American theoretical physicist and science administrator, best known 
 quote: ""
 image: "julius-robert-oppenheimer.png"
 ---
+
+J. Robert Oppenheimer was the brilliant (and complex) theoretical physicist who led the top-secret Los Alamos Laboratory during World War II. His mission? To develop the world's first atomic bomb as part of the Manhattan Project. Often called the "father of the atomic bomb," his work fundamentally changed global politics and warfare forever. A pivotal figure in science and history, with a story that's still debated today. 🤯 #ManhattanProject #AtomicBomb #PhysicsHistory

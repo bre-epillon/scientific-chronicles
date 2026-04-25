@@ -17,3 +17,5 @@ headline: "German astronomer who formulated three major laws of planetary motion
 quote: ""
 image: "johannes-kepler.png"
 ---
+
+Ever wonder why planets orbit the way they do? Johannes Kepler spilled the cosmic tea! This German astronomer wasn't just watching stars; he was charting their moves. He figured out three fundamental laws of planetary motion, giving us the actual 'how-to' guide for celestial dance. His precise observations and mathematical genius? They literally paved the way for Isaac Newton to drop the mic with the law of gravitation. Talk about a power duo! 🌌🪐 #KeplerLaws #PlanetaryMotion #ScienceBuddies

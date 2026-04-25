@@ -19,3 +19,5 @@ headline: "Blaise Pascal was a French polymath and child prodigy, renowned for h
 quote: ""
 image: "blaise-pascal.png"
 ---
+
+Blaise Pascal was seriously the smartest kid in the class, then the smartest adult in the room! 🤯 This French polymath was a child prodigy who aced everything from math (hello, probability theory and projective geometry!) to physics (hydrodynamics and Pascal's Law, anyone?). Oh, and he also invented the Pascaline, one of the earliest mechanical calculators. Basically, he was a walking, talking brainiac who made massive contributions across pretty much every scientific field he touched. Legend! ✨

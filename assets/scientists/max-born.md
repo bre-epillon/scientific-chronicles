@@ -13,3 +13,5 @@ headline: "German-British physicist who shared the Nobel Prize for Physics in 19
 quote: ""
 image: "max-born.png"
 ---
+
+Max Born helped us make sense of the wild, wacky world of quantum physics! He figured out that when we're talking about tiny subatomic particles, we can only really describe the *probability* of finding them in a certain place. It's like predicting where a ghost might pop up! His statistical approach was a game-changer for quantum theory and earned him a Nobel. Pretty epic, right? ✨⚛️

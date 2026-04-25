@@ -23,3 +23,5 @@ headline: "Soviet physicist awarded the 1962 Nobel Prize in Physics for his theo
 quote: ""
 image: "lev-landau.png"
 ---
+
+Imagine a liquid that just... flows forever without friction. Sounds like science fiction, right? Well, Lev Landau didn't just imagine it; he *explained* it! 🤯 This Soviet physicist cracked the code on the bizarre superfluid behavior of liquid helium. It was a massive theoretical breakthrough that earned him the 1962 Nobel Prize in Physics. But honestly, that was just one slice of his genius! Landau was a legendary figure who contributed across *so many* fields of theoretical physics. He was basically a one-man physics army! 🧠

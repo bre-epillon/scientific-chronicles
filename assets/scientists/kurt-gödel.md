@@ -14,3 +14,5 @@ headline: "Best known for his Incompleteness Theorems, which demonstrated fundam
 quote: ""
 image: "kurt-gödel.png"
 ---
+
+Kurt Gödel was a total brainiac who dropped some serious truth bombs on mathematics. His Incompleteness Theorems basically showed that in any really complex mathematical system, there will *always* be true statements that you just can't prove or disprove within that system. Mind. Blown. 🤯 It's like finding a secret, unreachable room in math itself! Super deep stuff.

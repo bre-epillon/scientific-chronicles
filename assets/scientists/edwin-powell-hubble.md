@@ -14,3 +14,5 @@ headline: "American astronomer considered the founder of extragalactic astronomy
 quote: ""
 image: "edwin-powell-hubble.png"
 ---
+
+Ever wonder how big the universe is? Edwin Powell Hubble basically founded the field of extragalactic astronomy, showing us that those "nebulae" weren't just clouds – they were other galaxies! 🌌 And get this: he was the first person to provide concrete evidence that our universe is actually *expanding*. Yeah, mind-blowing stuff! He totally changed how we see our place in the cosmos. What a cosmic detective! 🔭💫

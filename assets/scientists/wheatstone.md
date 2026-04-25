@@ -13,3 +13,5 @@ headline: "Developed an innovative telegraph system using bipolar encoding that 
 quote: ""
 image: "wheatstone.jpg"
 ---
+
+Before texts and DMs, there was the telegraph, and Wheatstone was a genius who made it way better! 📧 He cooked up a super clever telegraph system that used "bipolar encoding" – fancy talk for making messages travel faster and even allowing two-way conversations at once (duplex communication). This wasn't just a small tweak; it became a standard for getting info across distances, laying some serious groundwork for how we communicate today. He really sped things up! 💨

@@ -16,3 +16,5 @@ headline: "Mathematician known for developing the geometrical theory of numbers 
 quote: "Space and time as we know them today are concepts that will disappear and will be replaced by the concept of space-time."
 image: "hermann-minkowski.png"
 ---
+
+Ever heard of Einstein's relativity? Well, Hermann Minkowski was the math wizard who gave it its *shape*! 🌌 He basically said, "Hey Einstein, space and time aren't separate things, they're intertwined!" and created this awesome mathematical framework (space-time continuum) that totally blew everyone's minds. He even had a "geometrical theory of numbers" – so he was good with shapes *and* numbers. A true visionary who saw the universe a little differently. ✨

@@ -14,3 +14,5 @@ headline: "Discovered animal electricity and pioneered bioelectromagnetics by ob
 quote: ""
 image: "luigi-galvani.png"
 ---
+
+Picture this: Luigi Galvani, a scientist, messing around with dead frogs and noticing their muscles twitch when touched with metal. 🐸⚡️ Sounds like something out of a horror flick, right? But this wasn't just spooky science; it was a groundbreaking discovery! Galvani stumbled upon "animal electricity," paving the way for bioelectromagnetics. He basically showed us that electricity isn't just for lightning – our bodies have their own currents too! Wild!

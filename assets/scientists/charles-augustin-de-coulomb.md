@@ -15,3 +15,5 @@ headline: "French physicist and engineer best known for formulating Coulomb's la
 quote: ""
 image: "charles-augustin-de-coulomb.png"
 ---
+
+Ever wonder why magnets attract or repel? Or how static electricity works? Charles Augustin de Coulomb gave us the fundamental answer! This French physicist is famous for "Coulomb's Law," which mathematically describes the force between charged particles. It's like the gravity of electromagnetism! His work laid the groundwork for everything we know about electricity and magnetism today. Essential physics, right there. ⚡️ #Physics #Electromagnetism #CoulombsLaw

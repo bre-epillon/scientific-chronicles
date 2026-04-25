@@ -17,3 +17,5 @@ headline: "German mathematician renowned for his contributions to group theory, 
 quote: ""
 image: "ferdinand-georg-frobenius.png"
 ---
+
+Ever heard of Frobenius? No? Well, this German math maestro was basically doing ALL the math! Group theory, number theory, elliptic functions, differential equations... he had his hands in everything. He even came up with some cool determinantal identities and biquadratic forms. Think of him as the Swiss Army knife of 19th-century mathematics. Pretty epic, right? 🧠✨

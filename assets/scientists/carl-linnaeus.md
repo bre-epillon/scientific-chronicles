@@ -15,3 +15,5 @@ headline: "Swedish botanist, zoologist, and physician who formalized binomial no
 quote: ""
 image: "carl-linnaeus.png"
 ---
+
+Before Carl Linnaeus came along, describing plants and animals was a bit of a chaotic mess. 🌳🦁 This Swedish super-scientist (he was a botanist, zoologist, AND physician!) swooped in and formalized 'binomial nomenclature' – that fancy way of giving every species a two-part name (like *Homo sapiens*). He basically invented the library system for all living things! That's why he's totally earned the title 'father of modern taxonomy.' Thanks to him, scientists everywhere can actually understand each other when talking about a specific critter or plant. What a legend for bringing order to nature!

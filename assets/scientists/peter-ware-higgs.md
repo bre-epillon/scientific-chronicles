@@ -12,3 +12,5 @@ headline: "British theoretical physicist renowned for proposing the Higgs mechan
 quote: ""
 image: "peter-ware-higgs.png"
 ---
+
+Ever wonder why stuff has *mass*? Like, why aren't we all just floating around? Enter Peter Ware Higgs! This brilliant British theoretical physicist proposed the 'Higgs mechanism,' which explains how fundamental particles acquire mass by interacting with an omnipresent field. He also predicted the existence of the famous Higgs boson. Basically, he helped explain why matter... matters! 🌌🔬

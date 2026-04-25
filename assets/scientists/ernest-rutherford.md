@@ -14,3 +14,5 @@ headline: "New Zealand physicist and Nobel laureate considered the \"father of n
 quote: ""
 image: "ernest-rutherford.jpg"
 ---
+
+Ernest Rutherford, often called the "father of nuclear physics," was like the ultimate atomic detective! ⚛️ This New Zealand-born Nobel laureate totally changed how we see the atom. Before him, people thought atoms were pretty bland. But Rutherford, with his famous gold foil experiment, showed us that atoms have a tiny, dense nucleus at their core. Basically, he peered inside and found the heart of the matter! ❤️‍🔥

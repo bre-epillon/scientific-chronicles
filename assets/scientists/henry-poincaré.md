@@ -26,3 +26,5 @@ headline: "French mathematician, physicist, and astronomer, known for the Poinca
 quote: ""
 image: "henry-poincaré.png"
 ---
+
+Meet Henry Poincaré, the ultimate brainiac who truly did it all! 🤯 This French genius was a mathematician, physicist, AND astronomer – seriously, how many hats can one person wear? He's famous for the 'Poincaré Conjecture' (a geometry puzzle that took *decades* to solve!), and get this: he was also working on the special theory of relativity *around the same time* as Einstein. People even called him the 'last universalist' in math because he was just brilliant across so many fields. Total legend status achieved!

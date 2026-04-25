@@ -17,3 +17,5 @@ headline: "Turing is widely considered to be the father of theoretical computer 
 quote: ""
 image: "alan-turing.png"
 ---
+
+Before your smartphone, before the internet, there was Alan Turing. This British genius is widely considered the father of theoretical computer science and artificial intelligence! He basically dreamed up the fundamental concepts for modern computers and even laid the groundwork for how machines could 'think.' His code-breaking during WWII was legendary too! What a brain! 🧠💻

@@ -12,3 +12,5 @@ headline: "English physicist who discovered the neutron, for which he received t
 quote: ""
 image: "james-chadwick.png"
 ---
+
+Ever wonder what makes up an atom? Protons, electrons... and neutrons! And who found that sneaky little neutron? That'd be James Chadwick! This English physicist totally completed our understanding of the atom's core. 🧐 For that *major* discovery, he snagged the Nobel Prize in Physics in 1935. But he wasn't done there! He also led the UK's super-secret work on the atomic bomb during WWII. Talk about a resume! From fundamental particles to wartime projects, Chadwick was a pivotal player.

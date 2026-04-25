@@ -13,3 +13,5 @@ headline: "French mathematician known for founding group theory and solving long
 quote: ""
 image: "évariste-galois.png"
 ---
+
+Ever heard of a math genius who basically invented a whole new branch of mathematics before he turned 21? Meet Évariste Galois! This French whiz founded 'group theory' and solved some incredibly tough, long-standing problems in higher algebra. Sadly, he died super young (like, 20 years old!) in a duel, but his work changed math forever. Imagine what else he could've done! 💔🔢

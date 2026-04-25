@@ -11,3 +11,5 @@ headline: "A French physicist who won the Nobel Prize for postulating the wave n
 quote: ""
 image: "louis-victor-pierre-raymond-de-broglie.jpg"
 ---
+
+Louis de Broglie sounds super fancy, and his ideas totally were! This French physicist came up with a mind-blowing concept: what if electrons, those tiny particles buzzing around, also act like waves? 🌊🤯 Yeah, he basically said, "Hey, sometimes matter behaves like light!" This "wave-particle duality" idea was a massive game-changer for quantum mechanics and helped us understand the universe on a much smaller scale. He won a Nobel for it, and rightfully so. Talk about seeing things differently! ✨

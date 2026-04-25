@@ -14,3 +14,5 @@ headline: "British physicist John William Strutt, 3rd Baron Rayleigh, was a Nobe
 quote: ""
 image: "john-william-strutt.png"
 ---
+
+Lord Rayleigh was a total rockstar in physics! He didn't just poke around; he discovered argon, an entirely new element just chilling in our atmosphere! And ever wondered why the sky is blue? He figured that out too, with his work on Rayleigh scattering. Talk about a bright mind! 🤯

@@ -13,3 +13,5 @@ headline: "German physicist who was the first to broadcast and receive radio wav
 quote: ""
 image: "heinrich-rudolf-hertz.png"
 ---
+
+Ever streamed music or used Wi-Fi? You've got Heinrich Rudolf Hertz to thank! 📡 This German physicist was the first person to *actually* broadcast and receive radio waves. Yup, he proved they existed and could carry information – talk about a game-changer for communication! Oh, and he also discovered the photoelectric effect, which is super important for things like solar panels. What a legend! ✨

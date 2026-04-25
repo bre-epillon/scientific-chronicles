@@ -13,3 +13,5 @@ headline: "English physicist and mathematician known for establishing the relati
 quote: ""
 image: "james-prescott-joule.png"
 ---
+
+James Prescott Joule was an English physicist who basically taught us that energy is *never* truly lost, it just changes forms! He established the crucial relationship between heat and mechanical work, which was a huge step towards understanding the law of conservation of energy and the First Law of Thermodynamics. His work was so fundamental that the SI unit of energy, the 'joule,' is named after him! Talk about impactful! 🔥⚙️

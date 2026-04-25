@@ -4,7 +4,7 @@
   {{ $parts := split .Content "---" }}
   {{ if ge (len $parts) 3 }}
     {{ $meta := index $parts 1 | transform.Unmarshal }}
-    {{ $body := delimit (after 2 $parts) "---" | strings.TrimSpace }}
+    {{ $body := trim (delimit (after 2 $parts) "---") " \n\r\t" }}
     {{ $birthKey := "" }}
     {{ with index $meta "birth_date" }}
       {{ $birthKey = dateFormat "01-02" . }}

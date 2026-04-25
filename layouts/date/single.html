@@ -6,7 +6,7 @@
     {{ $meta := index $parts 1 | transform.Unmarshal }}
     {{ $body := delimit (after 2 $parts) "---" | strings.TrimSpace }}
     {{ $birthKey := "" }}
-    {{ with index $meta "birthdate" }}
+    {{ with index $meta "birth_date" }}
       {{ $birthKey = dateFormat "01-02" . }}
     {{ end }}
     {{ $deathKey := "" }}
@@ -26,8 +26,8 @@
         "headline" (index $meta "headline")
         "nationality" (index $meta "nationality")
         "gender" (index $meta "gender")
-        "birthdate" (index $meta "birthdate")
-        "death" (index $meta "death")
+        "birth_date" (index $meta "birth_date")
+        "death_date" (index $meta "death_date")
         "events" $events
         "content" ($body | markdownify)
       ) }}
@@ -130,8 +130,8 @@
                   <div class="person-meta">
                     {{ with .nationality }}<span>{{ . }}</span>{{ end }}
                     {{ with .gender }}<span>{{ . }}</span>{{ end }}
-                    {{ with .birthdate }}<span>Born {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
-                    {{ with .death }}<span>Died {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
+                    {{ with .birth_date }}<span>Born {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
+                    {{ with .death_date }}<span>Died {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
                   </div>
 
                   <div class="person-content">

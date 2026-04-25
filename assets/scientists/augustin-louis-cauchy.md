@@ -1,0 +1,22 @@
+---
+name: "Augustin-Louis"
+surname: "Cauchy"
+gender: "Male"
+nationality: "French"
+birth_date: "1789-08-21"
+death_date: "unknown"
+disciplines:
+  - "Mathematics"
+  - "Engineering"
+  - "Physics"
+  - "Mathematical Analysis"
+  - "Continuum Mechanics"
+  - "Calculus"
+  - "Complex Analysis"
+  - "Abstract Algebra"
+  - "Probability Theory"
+  - "Mathematical Physics"
+headline: "Pioneering French mathematician, engineer, and physicist who made fundamental contributions to mathematical analysis, continuum mechanics, and complex analysis."
+quote: ""
+image: "augustin-louis-cauchy.jpg"
+---

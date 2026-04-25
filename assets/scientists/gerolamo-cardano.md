@@ -1,0 +1,22 @@
+---
+name: "Gerolamo"
+surname: "Cardano"
+gender: "male"
+nationality: "Italian"
+birth_date: "unknown"
+death_date: "1576-09-23"
+disciplines:
+  - "Mathematics"
+  - "Medicine"
+  - "Biology"
+  - "Physics"
+  - "Chemistry"
+  - "Astrology"
+  - "Astronomy"
+  - "Philosophy"
+  - "Engineering"
+  - "Writer"
+headline: "Gerolamo Cardano was an Italian Renaissance polymath renowned for his contributions to mathematics, particularly probability and algebra, and for inventing several mechanical devices."
+quote: ""
+image: "gerolamo-cardano.jpg"
+---

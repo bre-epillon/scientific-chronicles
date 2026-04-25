@@ -1,0 +1,20 @@
+---
+name: "William Rowan"
+surname: "Hamilton"
+gender: "male"
+nationality: "Irish"
+birth_date: "1805-08-04"
+death_date: "1865-09-02"
+disciplines:
+  - "Mathematics"
+  - "Physics"
+  - "Optics"
+  - "Classical Mechanics"
+  - "Algebra"
+  - "Quantum Mechanics"
+  - "Electromagnetism"
+  - "Quaternions"
+headline: "Sir William Rowan Hamilton was an Irish mathematician and physicist famous for his contributions to optics, classical mechanics, and algebra, and for inventing quaternions and Hamiltonian mechanics."
+quote: ""
+image: "william-rowan-hamilton.png"
+---

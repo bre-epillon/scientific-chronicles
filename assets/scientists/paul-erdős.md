@@ -1,0 +1,21 @@
+---
+name: "Paul"
+surname: "Erdős"
+gender: "male"
+nationality: "Hungarian"
+birth_date: "1913-03-26"
+death_date: "1996-09-20"
+disciplines:
+  - "Graph theory"
+  - "Combinatorics"
+  - "Number theory"
+  - "Analysis"
+  - "Approximation theory"
+  - "Set theory"
+  - "Probability"
+  - "Discrete mathematics"
+  - "Ramsey theory"
+headline: "Paul Erdős was a famously prolific and eccentric Hungarian mathematician, known for his work in discrete mathematics and his unique collaborative style."
+quote: ""
+image: "paul-erdős.jpg"
+---

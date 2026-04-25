@@ -1,0 +1,21 @@
+---
+name: "Julius Robert"
+surname: "Oppenheimer"
+gender: "male"
+nationality: "American"
+birth_date: "1904-04-22"
+death_date: "1967-XX-XX"
+disciplines:
+  - "Theoretical Physics"
+  - "Nuclear Physics"
+  - "Quantum Mechanics"
+  - "Astrophysics"
+  - "Particle Physics"
+  - "Quantum Field Theory"
+  - "Cosmic Ray Physics"
+  - "Quantum Chemistry"
+  - "Nuclear Engineering"
+headline: "American theoretical physicist and science administrator, best known as the director of the Los Alamos Laboratory during the development of the atomic bomb for the Manhattan Project."
+quote: ""
+image: "julius-robert-oppenheimer.png"
+---

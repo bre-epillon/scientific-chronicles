@@ -1,0 +1,21 @@
+---
+name: "Blaise"
+surname: "Pascal"
+gender: "male"
+nationality: "French"
+birth_date: "1623-06-19"
+death_date: "unknown"
+disciplines:
+  - "mathematics"
+  - "physics"
+  - "invention"
+  - "theology"
+  - "writing"
+  - "probability theory"
+  - "hydrodynamics"
+  - "projective geometry"
+  - "fluid statics"
+headline: "Blaise Pascal was a French polymath and child prodigy, renowned for his contributions to mathematics (probability theory, projective geometry), physics (hydrodynamics, Pascal's law), and for inventing the Pascaline calculator."
+quote: ""
+image: "blaise-pascal.png"
+---

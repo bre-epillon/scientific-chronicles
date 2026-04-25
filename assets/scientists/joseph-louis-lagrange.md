@@ -1,0 +1,20 @@
+---
+name: "Joseph-Louis"
+surname: "Lagrange"
+gender: "male"
+nationality: "French"
+birth_date: "1736-01-25"
+death_date: "unknown"
+disciplines:
+  - "mathematician"
+  - "astronomer"
+  - "analysis"
+  - "number theory"
+  - "classical mechanics"
+  - "celestial mechanics"
+  - "analytical mechanics"
+  - "mathematical physics"
+headline: "Joseph-Louis Lagrange was an Italian mathematician and astronomer, later naturalized French, who made significant contributions to analysis, number theory, and mechanics."
+quote: ""
+image: "joseph-louis-lagrange.jpg"
+---

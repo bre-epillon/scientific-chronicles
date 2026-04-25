@@ -1,0 +1,20 @@
+---
+name: "Pierre"
+surname: "Curie"
+gender: "Male"
+nationality: "French"
+birth_date: "1859-05-15"
+death_date: "unknown"
+disciplines:
+  - "Physics"
+  - "Chemistry"
+  - "Crystallography"
+  - "Magnetism"
+  - "Piezoelectricity"
+  - "Radioactivity"
+  - "Nuclear Physics"
+  - "Nuclear Chemistry"
+headline: "Pierre Curie was a French physicist and chemist, a pioneer in crystallography, magnetism, piezoelectricity, and radioactivity, who co-discovered radium and polonium and shared the 1903 Nobel Prize in Physics for their studies on radioactivity."
+quote: ""
+image: "pierre-curie.png"
+---

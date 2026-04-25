@@ -1,0 +1,22 @@
+---
+name: "Carl Friedrich"
+surname: "Gauss"
+gender: "male"
+nationality: "German"
+birth_date: "1777-04-30"
+death_date: "unknown"
+disciplines:
+  - "Mathematics"
+  - "Electromagnetism"
+  - "Statistics"
+  - "Astronomy"
+  - "Physics"
+  - "Number theory"
+  - "Analysis"
+  - "Algebra"
+  - "Geometry"
+  - "Statics"
+headline: "Carl Friedrich Gauss was a German mathematician considered one of the greatest of all time for his profound contributions across mathematics, physics, and astronomy, often called 'the Prince of Mathematicians'."
+quote: ""
+image: "carl-friedrich-gauss.png"
+---

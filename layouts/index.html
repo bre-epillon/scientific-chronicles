@@ -24,10 +24,9 @@
         <div class="hero-grid">
           <section class="hero-copy">
             <span class="eyebrow">Timelines, discoveries, and daily context</span>
-            <h1>Explore science by the day, with a clean search-first landing page.</h1>
+            <h1>Every day is a breakthrough. Discover what happened in science on this exact day.</h1>
             <p>
-              A crisp, modern front page inspired by the polished utility-first aesthetic:
-              airy spacing, soft glass panels, strong typography, and fast paths into your archive.
+              Explore the timeline of human curiosity, from splitting atoms to launching rockets.
             </p>
 
             <div class="cta-row">
@@ -37,16 +36,16 @@
 
             <div class="stats" aria-label="Highlights">
               <div class="stat">
-                <strong>366</strong>
-                <span>day shortcuts ready</span>
+                <strong>🧬 Medical Marvels</strong>
+                <span>Cures, vaccines, and biology</span>
               </div>
               <div class="stat">
-                <strong>MM-DD</strong>
-                <span>predictable date paths</span>
+                <strong>🚀 Space & Beyond</strong>
+                <span>Satellites, rovers, and stargazing</span>
               </div>
               <div class="stat">
-                <strong>Fast</strong>
-                <span>single-step redirect flow</span>
+                <strong>⚡ Physics & Tech</strong>
+                <span>Lasers, atoms, and computing</span>
               </div>
             </div>
 
@@ -59,35 +58,33 @@
 
           <aside class="hero-card" id="date-picker">
             <div class="card-top">
-              <div class="card-title">Open a daily chronicle</div>
+              <div class="card-title">Time Travel by Date</div>
               <span class="chip">Live redirect</span>
             </div>
 
             <div class="preview">
               <label class="date-label" for="date-select">Select a month and day</label>
               <div class="date-row">
-                <select id="date-select" name="date">
-                  <option value="">Choose MM-DD</option>
-                </select>
-                <button class="btn btn-primary" id="go-button" type="button">Open page</button>
+                <input type="date" id="date-select" name="date">
+                <button class="btn btn-primary" id="go-button" type="button">Launch</button>
               </div>
               <p class="hint">
-                Selecting a date sends you to <code>/date/MM-DD.html</code>. You can also bookmark the direct destination once you land there.
+                Pick a date. Let's see what brilliant nerds were up to while the rest of us were sleeping.
               </p>
             </div>
 
             <div class="feature-grid">
               <section class="feature">
-                <strong>Editorial feel</strong>
-                <p>Soft gradients, roomy composition, and strong hierarchy keep the page feeling intentional.</p>
+                <strong>The Atomic Age</strong>
+                <p>Journey back to the era when we unlocked the power of the nucleus and changed the world forever.</p>
               </section>
               <section class="feature">
-                <strong>Utility clarity</strong>
-                <p>The date picker sits above the fold so the main action is immediate and obvious.</p>
+                <strong>The Space Race</strong>
+                <p>Relive the adrenaline-fueled sprint to the stars, from the first satellite to walking on the moon.</p>
               </section>
               <section class="feature">
-                <strong>Mobile ready</strong>
-                <p>The layout collapses cleanly on smaller screens without losing the hero emphasis.</p>
+                <strong>The Digital Revolution</strong>
+                <p>Trace the spark of the first transistors to the sprawling web of modern computing.</p>
               </section>
             </div>
           </aside>
@@ -98,43 +95,28 @@
 
   <script>
     (function () {
-      const select = document.getElementById('date-select');
+      const dateInput = document.getElementById('date-select');
       const button = document.getElementById('go-button');
-      const monthLengths = [
-        { month: '01', days: 31 },
-        { month: '02', days: 29 },
-        { month: '03', days: 31 },
-        { month: '04', days: 30 },
-        { month: '05', days: 31 },
-        { month: '06', days: 30 },
-        { month: '07', days: 31 },
-        { month: '08', days: 31 },
-        { month: '09', days: 30 },
-        { month: '10', days: 31 },
-        { month: '11', days: 30 },
-        { month: '12', days: 31 }
-      ];
 
-      for (const { month, days } of monthLengths) {
-        for (let day = 1; day <= days; day += 1) {
-          const paddedDay = String(day).padStart(2, '0');
-          const value = month + '-' + paddedDay;
-          const option = document.createElement('option');
-          option.value = value;
-          option.textContent = value;
-          select.appendChild(option);
-        }
-      }
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = String(today.getMonth() + 1).padStart(2, '0');
+      const day = String(today.getDate()).padStart(2, '0');
+      dateInput.value = `${year}-${month}-${day}`;
 
       const redirectToDate = function () {
-        if (!select.value) {
+        if (!dateInput.value) {
           return;
         }
 
-        window.location.href = '/date/' + select.value + '.html';
+        const dateParts = dateInput.value.split('-');
+        if (dateParts.length === 3) {
+          const mmdd = dateParts[1] + '-' + dateParts[2];
+          window.location.href = '/date/' + mmdd + '.html';
+        }
       };
 
-      select.addEventListener('change', redirectToDate);
+      dateInput.addEventListener('change', redirectToDate);
       button.addEventListener('click', redirectToDate);
     }());
   </script>

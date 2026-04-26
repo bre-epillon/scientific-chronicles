@@ -26,12 +26,13 @@
   {{ end }}
 {{ end }}
 {{ $sorted := sort $matches "name" }}
+{{ $displayDate := (time (printf "2024-%s" $pageDate)).Format "January 2" }}
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode | default `en` }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }} | {{ site.Title }}</title>
+  <title>{{ $displayDate }} | {{ site.Title }}</title>
   <link rel="stylesheet" href="{{ `css/site.css` | relURL }}">
 </head>
 <body>
@@ -56,10 +57,9 @@
         <section class="page-hero">
           <div class="page-hero-copy">
             <span class="eyebrow">Daily scientific chronology</span>
-            <h1>{{ .Title }}</h1>
+            <h1>{{ $displayDate }}</h1>
             <p>
-              Personalities connected to {{ .Title }} through either a birth or a death date,
-              presented in a clean content-first list.
+              Facts, discoveries, and personalities connected to {{ $displayDate }} through either a birth or a death date.
             </p>
 
             <div class="stats" aria-label="Date summary">
@@ -68,7 +68,7 @@
                 <span>people on this day</span>
               </div>
               <div class="stat">
-                <strong>{{ $pageDate }}</strong>
+                <strong>{{ $displayDate }}</strong>
                 <span>selected date</span>
               </div>
             </div>
@@ -77,19 +77,21 @@
           <aside class="hero-card">
             <div class="card-top">
               <div class="card-title">Switch day</div>
-              <span class="chip">MM-DD</span>
+              <span class="chip">{{ $displayDate }}</span>
             </div>
 
             <div class="preview">
               <label class="date-label" for="date-select">Select a different date</label>
               <div class="date-row">
-                <select id="date-select" name="date">
-                  <option value="">Choose MM-DD</option>
-                </select>
+                <input type="date" id="date-select" name="date">
                 <button class="btn btn-primary" id="go-button" type="button">Open page</button>
               </div>
+              <div class="date-row" style="margin-top: 0.75rem;">
+                <button class="btn btn-secondary" id="prev-button" type="button" style="flex: 1;">go to previous day</button>
+                <button class="btn btn-secondary" id="next-button" type="button" style="flex: 1;">go to next day</button>
+              </div>
               <p class="hint">
-                The page route is always <code>/date/MM-DD.html</code>, so every date stays predictable and easy to share.
+                Pick a date to see its breakthroughs. Use either the dropdown menu or type directly the date and press Enter. You can also navigate day by day with the buttons below.
               </p>
             </div>
           </aside>
@@ -99,7 +101,7 @@
           <div class="section-heading">
             <div>
               <span class="section-kicker">People</span>
-              <h2>All personalities for {{ .Title }}</h2>
+              <h2>All personalities for {{ $displayDate }}</h2>
             </div>
           </div>
 
@@ -148,7 +150,7 @@
             </div>
           {{ else }}
             <div class="empty-state">
-              <h3>No personalities found for {{ .Title }}</h3>
+              <h3>No personalities found for {{ $displayDate }}</h3>
               <p>Add more scientist records under <code>assets/scientists/</code> to populate this date.</p>
             </div>
           {{ end }}
@@ -159,48 +161,50 @@
 
   <script>
     (function () {
-      const select = document.getElementById('date-select');
+      const dateInput = document.getElementById('date-select');
       const button = document.getElementById('go-button');
+      const prevButton = document.getElementById('prev-button');
+      const nextButton = document.getElementById('next-button');
+      
       const current = '{{ $pageDate }}';
-      const monthLengths = [
-        { month: '01', days: 31 },
-        { month: '02', days: 29 },
-        { month: '03', days: 31 },
-        { month: '04', days: 30 },
-        { month: '05', days: 31 },
-        { month: '06', days: 30 },
-        { month: '07', days: 31 },
-        { month: '08', days: 31 },
-        { month: '09', days: 30 },
-        { month: '10', days: 31 },
-        { month: '11', days: 30 },
-        { month: '12', days: 31 }
-      ];
-
-      for (const { month, days } of monthLengths) {
-        for (let day = 1; day <= days; day += 1) {
-          const paddedDay = String(day).padStart(2, '0');
-          const value = month + '-' + paddedDay;
-          const option = document.createElement('option');
-          option.value = value;
-          option.textContent = value;
-          if (value === current) {
-            option.selected = true;
-          }
-          select.appendChild(option);
-        }
-      }
+      const year = new Date().getFullYear();
+      dateInput.value = `${year}-${current}`;
 
       const redirectToDate = function () {
-        if (!select.value) {
+        if (!dateInput.value) {
           return;
         }
 
-        window.location.href = '/date/' + select.value + '.html';
+        const dateParts = dateInput.value.split('-');
+        if (dateParts.length === 3) {
+          const mmdd = dateParts[1] + '-' + dateParts[2];
+          window.location.href = '/date/' + mmdd + '.html';
+        }
       };
 
-      select.addEventListener('change', redirectToDate);
+      const navigateDay = function(offset) {
+        if (!dateInput.value) return;
+        const dateParts = dateInput.value.split('-');
+        if (dateParts.length !== 3) return;
+        
+        const d = new Date(parseInt(dateParts[0], 10), parseInt(dateParts[1], 10) - 1, parseInt(dateParts[2], 10));
+        d.setDate(d.getDate() + offset);
+        
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        window.location.href = '/date/' + m + '-' + day + '.html';
+      };
+
+      dateInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          redirectToDate();
+        }
+      });
+      
       button.addEventListener('click', redirectToDate);
+      prevButton.addEventListener('click', function() { navigateDay(-1); });
+      nextButton.addEventListener('click', function() { navigateDay(1); });
     }());
   </script>
   <script src="/js/nav.js"></script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode | default `en` }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ site.Title }}</title>
+  <link rel="stylesheet" href="{{ `css/site.css` | relURL }}">
+</head>
+<body>
+  <div class="shell">
+    <div class="container">
+      <header class="nav">
+        <a class="brand" href="/">
+          <span class="brand-mark">SC</span>
+          <span>{{ site.Title }}</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#" id="today-nav-link">Today's Breakthrough</a>
+          <a href="/categories/">Fields of Study</a>
+          <a href="/tags/">Eras & Epics</a>
+          <a href="/hall-of-fame/">Hall of Fame</a>
+          <a href="#" id="random-nav-link">I'm Feeling Curious</a>
+          <a href="/about/">The Lab</a>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+          </div>
+        </section>
+
+        <div class="site-content list-panel" style="margin-top: 2rem;">
+          {{ .Content }}
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/nav.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode | default `en` }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ site.Title }}</title>
+  <link rel="stylesheet" href="{{ `css/site.css` | relURL }}">
+</head>
+<body>
+  <div class="shell">
+    <div class="container">
+      <header class="nav">
+        <a class="brand" href="/">
+          <span class="brand-mark">SC</span>
+          <span>{{ site.Title }}</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#" id="today-nav-link">Today's Breakthrough</a>
+          <a href="/categories/">Fields of Study</a>
+          <a href="/tags/">Eras & Epics</a>
+          <a href="/hall-of-fame/">Hall of Fame</a>
+          <a href="#" id="random-nav-link">I'm Feeling Curious</a>
+          <a href="/about/">The Lab</a>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <span class="eyebrow">The Greatest Hits</span>
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+          </div>
+        </section>
+
+        <div class="feature-grid" style="margin-top: 2rem;">
+          <!-- Card 1 -->
+          <section class="feature" style="background: var(--panel); border: 1px solid var(--line); padding: 0; overflow: hidden; border-radius: var(--radius-xl);">
+            <div style="height: 200px; background: linear-gradient(135deg, #1e3a8a, #3b82f6);"></div>
+            <div style="padding: 1.5rem;">
+              <strong style="font-size: 1.25rem;">Theory of Relativity</strong>
+              <p style="margin-top: 0.5rem; color: var(--muted);">Albert Einstein flips our understanding of space, time, and gravity completely on its head.</p>
+            </div>
+          </section>
+
+          <!-- Card 2 -->
+          <section class="feature" style="background: var(--panel); border: 1px solid var(--line); padding: 0; overflow: hidden; border-radius: var(--radius-xl);">
+            <div style="height: 200px; background: linear-gradient(135deg, #065f46, #10b981);"></div>
+            <div style="padding: 1.5rem;">
+              <strong style="font-size: 1.25rem;">Discovery of Penicillin</strong>
+              <p style="margin-top: 0.5rem; color: var(--muted);">Alexander Fleming accidentally leaves a petri dish open and saves millions of lives.</p>
+            </div>
+          </section>
+
+          <!-- Card 3 -->
+          <section class="feature" style="background: var(--panel); border: 1px solid var(--line); padding: 0; overflow: hidden; border-radius: var(--radius-xl);">
+            <div style="height: 200px; background: linear-gradient(135deg, #701a75, #d946ef);"></div>
+            <div style="padding: 1.5rem;">
+              <strong style="font-size: 1.25rem;">The Moon Landing</strong>
+              <p style="margin-top: 0.5rem; color: var(--muted);">Apollo 11 takes a giant leap for mankind. Sorry, flat-earthers.</p>
+            </div>
+          </section>
+          
+          <!-- Card 4 -->
+          <section class="feature" style="background: var(--panel); border: 1px solid var(--line); padding: 0; overflow: hidden; border-radius: var(--radius-xl);">
+            <div style="height: 200px; background: linear-gradient(135deg, #991b1b, #ef4444);"></div>
+            <div style="padding: 1.5rem;">
+              <strong style="font-size: 1.25rem;">Structure of DNA</strong>
+              <p style="margin-top: 0.5rem; color: var(--muted);">Watson, Crick, and Franklin unravel the microscopic twisted ladder that builds all of us.</p>
+            </div>
+          </section>
+
+          <!-- Card 5 -->
+          <section class="feature" style="background: var(--panel); border: 1px solid var(--line); padding: 0; overflow: hidden; border-radius: var(--radius-xl);">
+            <div style="height: 200px; background: linear-gradient(135deg, #854d0e, #eab308);"></div>
+            <div style="padding: 1.5rem;">
+              <strong style="font-size: 1.25rem;">The First Computer</strong>
+              <p style="margin-top: 0.5rem; color: var(--muted);">Babbage and Lovelace dream up the analytical engine, kicking off the digital age.</p>
+            </div>
+          </section>
+
+          <!-- Card 6 -->
+          <section class="feature" style="background: var(--panel); border: 1px solid var(--line); padding: 0; overflow: hidden; border-radius: var(--radius-xl);">
+            <div style="height: 200px; background: linear-gradient(135deg, #0f172a, #64748b);"></div>
+            <div style="padding: 1.5rem;">
+              <strong style="font-size: 1.25rem;">Splitting the Atom</strong>
+              <p style="margin-top: 0.5rem; color: var(--muted);">Rutherford and his team break the universe's ultimate Lego brick.</p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/nav.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

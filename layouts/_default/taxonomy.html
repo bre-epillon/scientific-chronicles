@@ -4,21 +4,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title }} | {{ site.Title }}</title>
+  <link rel="stylesheet" href="{{ `css/site.css` | relURL }}">
 </head>
 <body>
-  <main>
-    <h1>{{ .Title }}</h1>
-    {{ with .Content }}
-      {{ . }}
-    {{ end }}
+  <div class="shell">
+    <div class="container">
+      <header class="nav">
+        <a class="brand" href="/">
+          <span class="brand-mark">SC</span>
+          <span>{{ site.Title }}</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#" id="today-nav-link">Today's Breakthrough</a>
+          <a href="/categories/">Fields of Study</a>
+          <a href="/tags/">Eras & Epics</a>
+          <a href="/hall-of-fame/">Hall of Fame</a>
+          <a href="#" id="random-nav-link">I'm Feeling Curious</a>
+          <a href="/about/">The Lab</a>
+        </nav>
+      </header>
 
-    <ul>
-      {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-      {{ else }}
-        <li>No entries yet.</li>
-      {{ end }}
-    </ul>
-  </main>
+      <main class="page-main">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <span class="eyebrow">Insight Portal</span>
+            <h1>{{ .Title }}</h1>
+            <p>Tracing the breadcrumbs of human genius.</p>
+            {{ with .Content }}
+              <div class="site-content">{{ . }}</div>
+            {{ end }}
+          </div>
+        </section>
+
+        <div class="stats" aria-label="Highlights" style="margin-top: 2rem; display: flex; gap: 1rem;">
+          <div class="stat" style="background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 1.5rem; text-align: center; flex: 1;">
+            <strong style="display: block; font-size: 2rem; color: var(--accent);">{{ len .Pages }}</strong>
+            <span style="color: var(--muted);">Discoveries recorded</span>
+          </div>
+        </div>
+
+        <div class="list-panel" style="margin-top: 2rem;">
+          <div class="card-top">
+            <div class="card-title">Chronological Timeline</div>
+          </div>
+          <ul class="timeline" style="list-style: none; padding-left: 0; margin-top: 1rem;">
+            {{ range .Pages.ByDate }}
+              <li style="margin-bottom: 1rem; padding: 1.5rem; background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg);">
+                <strong style="font-size: 1.2rem;"><a href="{{ .RelPermalink }}" style="color: var(--text); text-decoration: none;">{{ .LinkTitle }}</a></strong>
+                {{ with .Params.date }}
+                <div style="font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem;">{{ dateFormat "January 2, 2006" . }}</div>
+                {{ end }}
+              </li>
+            {{ else }}
+              <li style="padding: 1.5rem; text-align: center; color: var(--muted);">No entries yet. The lab is empty!</li>
+            {{ end }}
+          </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/nav.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

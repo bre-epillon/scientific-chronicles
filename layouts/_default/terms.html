@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode | default `en` }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title }} | {{ site.Title }}</title>
+  <link rel="stylesheet" href="{{ `css/site.css` | relURL }}">
+</head>
+<body>
+  <div class="shell">
+    <div class="container">
+      <header class="nav">
+        <a class="brand" href="/">
+          <span class="brand-mark">SC</span>
+          <span>{{ site.Title }}</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#" id="today-nav-link">Today's Breakthrough</a>
+          <a href="/categories/">Fields of Study</a>
+          <a href="/tags/">Eras & Epics</a>
+          <a href="/hall-of-fame/">Hall of Fame</a>
+          <a href="#" id="random-nav-link">I'm Feeling Curious</a>
+          <a href="/about/">The Lab</a>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <span class="eyebrow">Insight Portal</span>
+            <h1>{{ if eq .Title "Categories" }}Fields of Study{{ else if eq .Title "Tags" }}Eras & Epics{{ else }}{{ .Title }}{{ end }}</h1>
+            <p>Tracing the breadcrumbs of human genius.</p>
+            {{ with .Content }}
+              <div class="site-content">{{ . }}</div>
+            {{ end }}
+          </div>
+        </section>
+
+        <div class="feature-grid" style="margin-top: 2rem;">
+          {{ range .Data.Terms.ByCount }}
+            <section class="feature">
+              <strong><a href="{{ .Page.RelPermalink }}" style="color: var(--text); text-decoration: none;">{{ .Page.Title }}</a></strong>
+              <p style="margin-top: 0.5rem; color: var(--muted); font-size: 0.9rem;">
+                {{ .Count }} discoveries recorded
+              </p>
+            </section>
+          {{ end }}
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/nav.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

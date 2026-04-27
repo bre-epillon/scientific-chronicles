@@ -1,5 +1,7 @@
 {{ $pageDate := .File.BaseFileName }}
-{{ $matches := slice }}
+
+{{/* scientists matching */}}
+{{ $peopleMatches := slice }}
 {{ range resources.Match "scientists/*.md" }}
   {{ $parts := split .Content "---" }}
   {{ if ge (len $parts) 3 }}
@@ -21,11 +23,30 @@
       {{ if eq $deathKey $pageDate }}
         {{ $events = $events | append "Death" }}
       {{ end }}
-      {{ $matches = $matches | append (dict "name" (printf "%s %s" (index $meta "name") (index $meta "surname")) "headline" (index $meta "headline") "nationality" (index $meta "nationality") "gender" (index $meta "gender") "birth_date" (index $meta "birth_date") "death_date" (index $meta "death_date") "image" (index $meta "image") "events" $events "content" ($body | markdownify)) }}
+      {{ $peopleMatches = $peopleMatches | append (dict "name" (printf "%s %s" (index $meta "name") (index $meta "surname")) "headline" (index $meta "headline") "nationality" (index $meta "nationality") "gender" (index $meta "gender") "birth_date" (index $meta "birth_date") "death_date" (index $meta "death_date") "image" (index $meta "image") "events" $events "content" ($body | markdownify)) }}
     {{ end }}
   {{ end }}
 {{ end }}
-{{ $sorted := sort $matches "name" }}
+{{ $sortedPeople := sort $peopleMatches "name" }}
+
+{{/* events matching */}}
+{{ $eventMatches := slice }}
+{{ range resources.Match "events/*.md" }}
+  {{ $parts := split .Content "---" }}
+  {{ if ge (len $parts) 3 }}
+    {{ $meta := index $parts 1 | transform.Unmarshal }}
+    {{ $body := trim (delimit (after 2 $parts) "---") " \n\r\t" }}
+    {{ $eventDate := "" }}
+    {{ with index $meta "date" }}
+      {{ $eventDate = dateFormat "01-02" . }}
+    {{ end }}
+    {{ if eq $eventDate $pageDate }}
+      {{ $eventMatches = $eventMatches | append (dict "title" (index $meta "title") "headline" (index $meta "headline") "event_type" (index $meta "event_type") "disciplines" (index $meta "disciplines") "associated_people" (index $meta "associated_people") "image" (index $meta "image") "content" ($body | markdownify) "year" (dateFormat "2006" (index $meta "date"))) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $sortedEvents := sort $eventMatches "year" "desc" }}
+
 {{ $displayDate := (time (printf "2024-%s" $pageDate)).Format "January 2" }}
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode | default `en` }}">
@@ -34,6 +55,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ $displayDate }} | {{ site.Title }}</title>
   <link rel="stylesheet" href="{{ `css/site.css` | relURL }}">
+  <style>
+    .collapsible-card summary {
+      list-style: none;
+      outline: none;
+    }
+    .collapsible-card summary::-webkit-details-marker {
+      display: none;
+    }
+    .collapsible-card[open] .headline-text {
+      display: none;
+    }
+    .collapsible-card .expand-icon {
+      transition: transform 0.2s ease;
+    }
+    .collapsible-card[open] .expand-icon {
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
 <body>
   <div class="shell">
@@ -59,17 +98,17 @@
             <span class="eyebrow">Daily scientific chronology</span>
             <h1>{{ $displayDate }}</h1>
             <p>
-              Facts, discoveries, and personalities connected to {{ $displayDate }} through either a birth or a death date.
+              Facts, discoveries, and personalities connected to {{ $displayDate }} through births, deaths, and historical milestones.
             </p>
 
             <div class="stats" aria-label="Date summary">
               <div class="stat">
-                <strong>{{ len $sorted }}</strong>
-                <span>people on this day</span>
+                <strong>{{ len $sortedPeople }}</strong>
+                <span>Personalities</span>
               </div>
               <div class="stat">
-                <strong>{{ $displayDate }}</strong>
-                <span>selected date</span>
+                <strong>{{ len $sortedEvents }}</strong>
+                <span>Milestones</span>
               </div>
             </div>
           </div>
@@ -87,71 +126,140 @@
                 <button class="btn btn-primary" id="go-button" type="button">Open page</button>
               </div>
               <div class="date-row" style="margin-top: 0.75rem;">
-                <button class="btn btn-secondary" id="prev-button" type="button" style="flex: 1;">go to previous day</button>
-                <button class="btn btn-secondary" id="next-button" type="button" style="flex: 1;">go to next day</button>
+                <button class="btn btn-secondary" id="prev-button" type="button" style="flex: 1;">previous day</button>
+                <button class="btn btn-secondary" id="next-button" type="button" style="flex: 1;">next day</button>
               </div>
-              <p class="hint">
-                Pick a date to see its breakthroughs. Use either the dropdown menu or type directly the date and press Enter. You can also navigate day by day with the buttons below.
-              </p>
             </div>
           </aside>
         </section>
 
+        {{/* People Section */}}
         <section class="list-panel">
           <div class="section-heading">
             <div>
-              <span class="section-kicker">People</span>
-              <h2>All personalities for {{ $displayDate }}</h2>
+              <span class="section-kicker">Personalities</span>
+              <h2>Scientific figures for {{ $displayDate }}</h2>
             </div>
           </div>
 
-          {{ if gt (len $sorted) 0 }}
+          {{ if gt (len $sortedPeople) 0 }}
             <div class="person-list">
-              {{ range $sorted }}
+              {{ range $sortedPeople }}
                 <article class="person-card">
-                  <div class="person-card-inner">
-                    {{ if .image }}
-                      {{ $img := resources.Get (printf "images/%s" .image) }}
-                      {{ if $img }}
-                        <div class="person-avatar">
-                          <img src="{{ $img.RelPermalink }}" alt="Portrait of {{ .name }}" loading="lazy">
-                        </div>
-                      {{ end }}
-                    {{ end }}
-                    <div class="person-info">
-                      <div class="person-header">
-                        <div>
-                          <h3>{{ .name }}</h3>
-                          {{ with .headline }}
-                            <p class="person-headline">{{ . }}</p>
+                  <details class="collapsible-card">
+                    <summary>
+                      <div class="person-card-inner">
+                        {{ if .image }}
+                          {{ $img := resources.Get (printf "images/%s" .image) }}
+                          {{ if $img }}
+                            <div class="person-avatar">
+                              <img src="{{ $img.RelPermalink }}" alt="Portrait of {{ .name }}" loading="lazy">
+                            </div>
                           {{ end }}
-                        </div>
-                        <div class="event-pills">
-                          {{ range .events }}
-                            <span class="meta-pill">{{ . }}</span>
-                          {{ end }}
+                        {{ end }}
+                        <div class="person-info">
+                          <div class="person-header">
+                            <div style="flex: 1;">
+                              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <h3>{{ .name }}</h3>
+                                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--soft);"><path d="m6 9 6 6 6-9"/></svg>
+                              </div>
+                              <p class="person-headline headline-text">{{ .headline }}</p>
+                            </div>
+                            <div class="event-pills">
+                              {{ range .events }}
+                                <span class="meta-pill">{{ . }}</span>
+                              {{ end }}
+                            </div>
+                          </div>
+                          <div class="person-meta headline-text">
+                            {{ with .nationality }}<span>{{ . }}</span>{{ end }}
+                            {{ with .birth_date }}<span>Born {{ dateFormat "2006" . }}</span>{{ end }}
+                            {{ with .death_date }}<span>Died {{ dateFormat "2006" . }}</span>{{ end }}
+                          </div>
                         </div>
                       </div>
-
-                      <div class="person-meta">
-                        {{ with .nationality }}<span>{{ . }}</span>{{ end }}
-                        {{ with .gender }}<span>{{ . }}</span>{{ end }}
-                        {{ with .birth_date }}<span>Born {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
-                        {{ with .death_date }}<span>Died {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
-                      </div>
-
-                      <div class="person-content">
-                        {{ .content }}
+                    </summary>
+                    <div class="person-card-inner" style="margin-top: 1.5rem; cursor: default;">
+                      <div class="person-info" style="padding-left: {{ if .image }}10.5rem{{ else }}0{{ end }};">
+                         <div class="person-content">
+                            {{ .content }}
+                         </div>
+                         <div class="person-meta" style="margin-top: 1.5rem; opacity: 0.8;">
+                            {{ with .nationality }}<span>{{ . }}</span>{{ end }}
+                            {{ with .birth_date }}<span>Born {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
+                            {{ with .death_date }}<span>Died {{ dateFormat "January 2, 2006" . }}</span>{{ end }}
+                         </div>
                       </div>
                     </div>
-                  </div>
+                  </details>
                 </article>
               {{ end }}
             </div>
           {{ else }}
             <div class="empty-state">
-              <h3>No personalities found for {{ $displayDate }}</h3>
-              <p>Add more scientist records under <code>assets/scientists/</code> to populate this date.</p>
+              <p>No historical births or deaths recorded in our database for this day.</p>
+            </div>
+          {{ end }}
+        </section>
+
+        {{/* Events Section */}}
+        <section class="list-panel" style="margin-top: 4rem;">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker" style="border-color: rgba(6, 182, 212, 0.14); color: #0891b2;">Milestones</span>
+              <h2>Scientific breakthroughs on this day</h2>
+            </div>
+          </div>
+
+          {{ if gt (len $sortedEvents) 0 }}
+            <div class="person-list">
+              {{ range $sortedEvents }}
+                <article class="person-card" style="border-left: 4px solid var(--accent-2);">
+                  <details class="collapsible-card">
+                    <summary>
+                      <div class="person-card-inner">
+                        <div class="person-info">
+                          <div class="person-header">
+                            <div style="flex: 1;">
+                              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                <h3 style="color: var(--text);">{{ .year }}: {{ .title }}</h3>
+                                <svg class="expand-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--soft);"><path d="m6 9 6 6 6-9"/></svg>
+                              </div>
+                              <p class="person-headline headline-text">{{ .headline }}</p>
+                            </div>
+                            <div class="event-pills">
+                              <span class="meta-pill" style="background: rgba(6, 182, 212, 0.08); color: #0891b2;">{{ .event_type }}</span>
+                            </div>
+                          </div>
+                          <div class="person-meta headline-text">
+                            {{ range .disciplines }}
+                              <span>{{ . }}</span>
+                            {{ end }}
+                          </div>
+                        </div>
+                      </div>
+                    </summary>
+                    <div class="person-card-inner" style="margin-top: 1.5rem; cursor: default;">
+                      <div class="person-info">
+                         <div class="person-content">
+                            {{ .content }}
+                         </div>
+                         <div class="person-meta" style="margin-top: 1.5rem; opacity: 0.8;">
+                            <span>Historical Year: {{ .year }}</span>
+                            {{ range .disciplines }}
+                              <span>{{ . }}</span>
+                            {{ end }}
+                         </div>
+                      </div>
+                    </div>
+                  </details>
+                </article>
+              {{ end }}
+            </div>
+          {{ else }}
+            <div class="empty-state">
+              <p>No major breakthroughs or discoveries recorded for this specific day yet.</p>
             </div>
           {{ end }}
         </section>
@@ -208,6 +316,5 @@
     }());
   </script>
   <script src="/js/nav.js"></script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

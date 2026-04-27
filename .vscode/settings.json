@@ -1,6 +1,7 @@
 {
   "tailwindCSS.experimental.configFile": "./themes/hugoplate/assets/css/main.css",
   "conventionalCommits.scopes": [
-    "New Scientist"
+    "New Scientist",
+    "Event"
   ]
 }
